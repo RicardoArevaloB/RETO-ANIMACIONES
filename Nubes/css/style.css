@@ -1,0 +1,48 @@
+
+body{
+    background-image: url(../images/sky.png);
+    overflow: hidden;
+    background-size: cover;
+} 
+
+
+
+
+.nube1{
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: -26%;
+    animation: nube 25s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.nube2{
+    width: 15vw;
+    height: auto;
+    margin-top: 15%;
+    margin-left: -27%;
+    position: absolute;
+    animation: nube2 20s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes nube{
+    0%{left: 1%;}
+    100%{
+        left: 130%;
+    }
+}
+
+@keyframes nube2{
+
+    0%{
+        left: 1%;
+    }
+    100%{
+        left: 130%;
+    }
+}

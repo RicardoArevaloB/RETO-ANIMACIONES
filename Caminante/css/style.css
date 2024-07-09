@@ -1,0 +1,48 @@
+
+body{
+    background-image: url(../images/46745787960a652b70a20a64fbd735b7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.camin2{
+    position: relative;
+    display: flex;
+    animation: ade 25s;
+    animation-iteration-count: infinite;  
+    right: -100%;
+}
+
+.caminante{
+    margin-left: auto;
+    margin-top: 7%;
+    height: 500px;
+    width: 500px;
+    background-image: url(../images/walker_frames-fotor-bg-r.png);
+    animation: caminar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    overflow: hidden;
+
+}
+
+@keyframes caminar{
+    0%{
+        background-position-y: 0px;
+    }
+
+    100%{
+        background-position-y: -4998px;
+    }
+}
+
+@keyframes ade{
+
+    0%{
+        left: 30%;
+    }
+    100%{
+        left: -90%;
+    }
+}
